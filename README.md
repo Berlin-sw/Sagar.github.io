@@ -67,7 +67,6 @@ src/
 ├── lib/                  GitHub API client, validation, icons registry, formatting, OG layout
 └── styles/globals.css    Design tokens (colours for both themes), Tailwind theme, utilities
 public/                   resume.pdf, manifest icons (Next.js requires public/ at the project root)
-scripts/                  generate-icons.mjs — rebuilds favicon/app icons from the logo
 ```
 
 ### Editing content
@@ -102,11 +101,3 @@ Without the Resend variables the form still validates and shows visitors a frien
 2. Import it at [vercel.com/new](https://vercel.com/new) — the framework is detected automatically.
 3. Add the environment variables above under **Project → Settings → Environment Variables**.
 4. Deploy. Set `NEXT_PUBLIC_SITE_URL` to your custom domain if you add one.
-
-## Regenerating icons
-
-The favicon and app icons are generated from the logo mark:
-
-```bash
-node scripts/generate-icons.mjs
-```
